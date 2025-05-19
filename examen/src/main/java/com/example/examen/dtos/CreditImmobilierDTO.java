@@ -17,6 +17,6 @@ public class CreditImmobilierDTO extends CreditDTO {
     private double montant;
     private int dureeRemboursement;
     private double tauxInteret;
-    private Client client;
+    private ClientDTO clientDTO;
     private TypeBien typeBien;
 }
