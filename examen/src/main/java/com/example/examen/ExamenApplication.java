@@ -31,8 +31,6 @@ CommandLineRunner start(ClientRepository clientRepository, CreditRepository cred
 			client.setNom(name);
 			client.setEmail(name+"@gmail.com");
 			clientRepository.save(client);
-
-
 		});
 		clientRepository.findAll().forEach(cl->{
 			CreditImmobilier creditImmobilier=new CreditImmobilier();
