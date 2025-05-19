@@ -12,6 +12,6 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class CreditPersonnel {
+public class CreditPersonnel extends Credit {
     private String motif;
 }

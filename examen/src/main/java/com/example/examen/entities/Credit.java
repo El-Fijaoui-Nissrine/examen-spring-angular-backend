@@ -21,6 +21,7 @@ public class Credit {
 
     @Temporal(TemporalType.DATE)
     private Date dateAcceptation;
+    @Enumerated(EnumType.STRING)
 private CreditStatut statut;
     private double montant;
     private int dureeRemboursement;

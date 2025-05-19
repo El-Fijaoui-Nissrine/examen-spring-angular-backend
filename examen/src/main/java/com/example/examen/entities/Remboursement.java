@@ -19,6 +19,7 @@ public class Remboursement {
     @Temporal(TemporalType.DATE)
     private Date date;
     private double montant;
+    @Enumerated(EnumType.STRING)
     private TypeRembouresement type;
     @ManyToOne
     private Credit credit;
