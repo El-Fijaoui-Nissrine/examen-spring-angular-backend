@@ -1,12 +1,15 @@
 package com.example.examen;
 
+import com.example.examen.dtos.ClientDTO;
 import com.example.examen.entities.*;
 import com.example.examen.enums.CreditStatut;
 import com.example.examen.enums.TypeBien;
 import com.example.examen.enums.TypeRembouresement;
+import com.example.examen.mappers.CreditMapperImpl;
 import com.example.examen.repositories.ClientRepository;
 import com.example.examen.repositories.CreditRepository;
 import com.example.examen.repositories.RemboursementRepository;
+import com.example.examen.services.CreditService;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -23,7 +26,7 @@ public class ExamenApplication {
 		SpringApplication.run(ExamenApplication.class, args);
 	}
 
-@Bean
+//@Bean
 CommandLineRunner start(ClientRepository clientRepository, CreditRepository creditRepository, RemboursementRepository remboursementRepository){
 	return args->{
 		Stream.of("hassan","Yassine","Yassmine","Aicha").forEach(name->{
